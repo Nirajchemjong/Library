@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+        integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Library Management System</title>
+</head>
+
+<body>
+    <center>
+        <h1>Library Management Systems</h1>
+    </center>
+
+    <!-- <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        ...
+    </div> -->
+
+
+    <!-- Button trigger modal -->
+    <button type="button" class="d-flex mx-4 my-lg-3 btn btn-primary" data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop">
+        + Add New Book
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">List Your Favourite Book </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+
+                    <!-- starting input  -->
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Title</span>
+                        <input type="text" class="form-control" placeholder="Title" aria-label="Title"
+                            aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon2">Authur</span>
+                        <input type="text" class="form-control" placeholder="Authur Name" aria-label="Authur"
+                            aria-describedby="basic-addon2">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text ">Review</span>
+                        <textarea name="review" class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" aria-label="checkbox" type="checkbox" value=""
+                            id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Read
+                        </label>
+                    </div>
+
+
+                    <!-- end of input  -->
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="submitForm">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- starting Displaying Card  -->
+    <div class="d-flex justify-content-md-around  gap-4 ">
+
+        <!-- card one starts  -->
+        <div class="card d-flex justify-content-start p-4" style="width: 18rem;">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body">
+                <h5 class="card-title">Book name</h5>
+                <h5 class="card-text"> Auther</h5>
+                <p class="card-text">Review</p>
+                <a href="#" class="btn btn-danger">delete</a>
+            </div>
+        </div>
+
+        <!-- card one ends  -->
+
+        <!-- card two starts  -->
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <!-- card two ends  -->
+    </div>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
+        integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./script.js"></script>
+
+
+</body>
+
+</html>
