@@ -64,3 +64,62 @@
 // });
 
 // ======================Starting Again from Start =============
+
+const book = document.querySelectorAll(".form-control, .form-check-input");
+let bookdataArr = [];
+
+const btnOnsubmit = document.querySelector("#submitForm");
+
+btnOnsubmit.addEventListener("click", () => {
+  // here adding eventlistener on clicking button
+
+  let bookdata = {};
+
+  book.forEach((element) => {
+    const formName = element.getAttribute("aria-label");
+
+    if (element.type === "checkbox") {
+      bookdata[formName] = element.checked;
+    } else {
+      bookdata[formName] = element.value;
+    }
+  });
+  bookdataArr.push(bookdata);
+  //displaying pushed data
+  const cardElm = document.querySelector(".displayCard");
+
+  cardContent = "";
+  bookdataArr.forEach((bookdata) => {
+    cardContent = `
+  
+           <div class="card-body justify-content-center" style="width:18rem" >
+               <h5 class="card-title">${bookdata.Title}</h5>
+             <h5 class="card-text">${bookdata.Authur}</h5>
+              <p class="card-text">${bookdata.Review}</p>
+            <a href="#" class="btn btn-danger">delete</a>
+            </div>
+           
+          `;
+  });
+  const newCard = document.createElement("div");
+  newCard.classList.add("card");
+  newCard.innerHTML = cardContent;
+  cardElm.appendChild(newCard);
+  console.log(bookdataArr);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// =================GPT answers =============
